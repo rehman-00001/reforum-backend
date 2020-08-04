@@ -3,7 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 
 // server configurations
-const serverConfigs = require('../config/serverConfig');
+const serverConfigs = require('./config/serverConfig');
 
 // connect to database
 
