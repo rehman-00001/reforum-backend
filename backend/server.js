@@ -3,7 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 
 // server configurations
-const serverConfigs = require('./config/serverConfig');
+const serverConfigs = require('../config/serverConfig');
 
 // connect to database
 
@@ -20,7 +20,7 @@ mongoose
 const app = express();
 
 // apply express configs
-require('./backend/express')(app, serverConfigs);
+require('./express')(app, serverConfigs);
 
 // fire up the server
 app.listen(serverConfigs.PORT, (error) => {
