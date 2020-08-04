@@ -6,7 +6,15 @@ const mongoose = require('mongoose');
 const serverConfigs = require('./config/serverConfig');
 
 // connect to database
-mongoose.connect(serverConfigs.DBURL);
+
+mongoose
+  .connect(serverConfigs.DBURL, {
+    useUnifiedTopology: true,
+    useNewUrlParser: true,
+    useFindAndModify: true,
+  })
+  .then((s) => console.log('db connections success'))
+  .catch((e) => console.log(e));
 
 // initialize express
 const app = express();

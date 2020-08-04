@@ -10,8 +10,7 @@ const forumAPI = (app) => {
   app.get('/api/forum', (req, res) => {
     getAllForums().then(
       (result) => {
-        console.log(result);
-        debugger;
+        console.log('forums: ', result);
         res.send(result);
       },
       (error) => {
