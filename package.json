@@ -26,8 +26,7 @@
   "scripts": {
     "test": "jest",
     "start": "better-npm-run start",
-    "start:dev": "better-npm-run start:dev",
-    "build": "webpack --config config/webpack.prod.config.js"
+    "start:dev": "better-npm-run start:dev"
   },
   "betterScripts": {
     "start": {
