@@ -57,6 +57,7 @@
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-es2017": "^7.0.0-beta.53",
     "@babel/preset-react": "^7.10.4",
+    "@babel/runtime": "^7.11.0",
     "@testing-library/jest-dom": "^5.11.2",
     "@testing-library/react": "^10.4.7",
     "async": "^2.1.5",
