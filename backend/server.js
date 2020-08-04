@@ -1,5 +1,7 @@
-// modules for server
-require('dotenv').config();
+if (app.get('env') == 'development') {
+  require('dotenv').config();
+}
+
 const express = require('express');
 const mongoose = require('mongoose');
 
