@@ -1,4 +1,5 @@
 // modules for server
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 
@@ -6,7 +7,7 @@ const mongoose = require('mongoose');
 const serverConfigs = require('./config/serverConfig');
 
 // connect to database
-
+console.log('DB URL:', serverConfigs.DBURL);
 mongoose
   .connect(serverConfigs.DBURL, {
     useUnifiedTopology: true,

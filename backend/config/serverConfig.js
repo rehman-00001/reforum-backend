@@ -11,7 +11,7 @@ const serverConfigs = {
   PORT: process.env.PORT || 8080,
   DBURL: process.env.DBURL,
   ROOT: path.resolve(__dirname, '..'),
-  JWT_KEY: 'SuperSecretKey',
+  JWT_KEY: process.env.JWT_KEY,
 };
 
 module.exports = serverConfigs;

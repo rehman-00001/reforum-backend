@@ -26,7 +26,7 @@
   "scripts": {
     "test": "jest",
     "start": "node ./dist/server.js",
-    "build": "mkdir dist && babel backend -s -d dist"
+    "build": "rm -rf dist && mkdir dist && babel backend -s -d dist"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -46,9 +46,14 @@
     "react-dom": "15.4.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.10.5",
     "@babel/core": "^7.11.0",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/plugin-proposal-export-default-from": "^7.10.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+    "@babel/plugin-transform-async-to-generator": "^7.10.4",
+    "@babel/plugin-transform-object-assign": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-es2017": "^7.0.0-beta.53",
     "@babel/preset-react": "^7.10.4",
@@ -57,9 +62,6 @@
     "async": "^2.1.5",
     "autoprefixer": "^6.6.1",
     "axios": "^0.19.2",
-    "babel": "^6.5.2",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^7.1.1",
     "babel-jest": "^20.0.3",
     "babel-loader": "^6.2.9",
@@ -70,6 +72,7 @@
     "babel-register": "^6.26.0",
     "classnames": "^2.2.5",
     "css-loader": "^0.26.1",
+    "dotenv": "^8.2.0",
     "draft-js": "^0.10.0",
     "eslint": "^3.12.1",
     "eslint-plugin-react": "^6.8.0",

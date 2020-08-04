@@ -2,10 +2,9 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 const User = require('./model');
-const { JWT_KEY } = require('../../../config/serverConfig');
 const { getFullProfile } = require('./controller');
 const checkAuth = require('../../utilities/check-auth');
-
+const JWT_KEY = process.env.JWT_KEY;
 /**
  * user apis
  */

@@ -20,3 +20,4 @@ const expressConfig = (app, serverConfigs) => {
 };
 
 module.exports = expressConfig;
+// "babel-core": "^7.0.0-bridge.0",
