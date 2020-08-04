@@ -1,0 +1,21 @@
+# dependency
+node_modules
+
+# yarn
+yarn.lock
+package-lock.json
+
+# npm cache
+.npm
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# coverages
+coverage
+
+# OSX stuffs
+.DS_Store
+.env
