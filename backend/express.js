@@ -1,14 +1,8 @@
 /**
  * module dependencies for express configuration
  */
-const passport = require('passport');
 const morgan = require('morgan');
-const compress = require('compression');
-const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
-// const session = require('express-session');
-// const mongoStore = require('connect-mongo')(session);
-const flash = require('connect-flash');
 
 /**
  * express configuration
