@@ -25,8 +25,7 @@
   },
   "scripts": {
     "test": "jest",
-    "start": "node ./dist/server.js",
-    "build": "rm -rf dist && mkdir dist && babel backend -s -d dist"
+    "start": "node ./backend/server.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
