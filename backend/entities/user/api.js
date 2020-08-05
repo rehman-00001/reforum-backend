@@ -81,7 +81,9 @@ const userAPI = (app) => {
     if (checkAuth(req)) {
       const user = await User.findOne({ _id: req.userId });
       if (user) {
-        return res.status(200).json(user.toObject());
+        return res
+          .status(200)
+          .json({ ...user.toObject(), password: undefined });
       }
     }
     return res.send(null);
