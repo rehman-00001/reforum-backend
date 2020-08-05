@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const asyncEach = require('async/each');
+const asyncEach = require('async-each');
 
 // controllers
 const getAllOpinions = require('../opinion/controller').getAllOpinions;

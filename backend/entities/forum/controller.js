@@ -1,4 +1,4 @@
-const asyncEach = require('async/each');
+const asyncEach = require('async-each');
 
 // models
 const Forum = require('./model');
