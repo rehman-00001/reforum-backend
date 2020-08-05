@@ -19,5 +19,3 @@ coverage
 # OSX stuffs
 .DS_Store
 .env
-
-dist
